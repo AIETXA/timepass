@@ -11,6 +11,8 @@ const horaMiddleware = (req , res, next) => {
 
     req.dateType = `La hora actual es ${formatedTime}.`;
     req.horaActual = now.getHours();
+    
     next();
 }
 module.exports = horaMiddleware;
+console.log(horaMiddleware);
