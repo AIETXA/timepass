@@ -4,5 +4,6 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.send(`<h1>Bienvenidos</h1><br><h2>La hora actual es ${formatedTime}`);
+    res.send('<h1>Bienvenidos a /endroute</h1><p>Accediste correstamente a la ruta final</p><a href="/">Volver al inicio</a>');
 });
+module.exports = router;

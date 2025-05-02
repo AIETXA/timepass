@@ -15,4 +15,3 @@ const horaMiddleware = (req , res, next) => {
     next();
 }
 module.exports = horaMiddleware;
-console.log(horaMiddleware);

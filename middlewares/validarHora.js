@@ -1,5 +1,5 @@
-module.exports(req, res, next) => {
-    const hora = req.dateType;
+module.exports = (req, res, next) => {
+    const hora = req.horaActual;
 
     if(hora>= 12 && hora <=23) {
         next();
